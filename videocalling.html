@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="coopedup.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
@@ -14,21 +15,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </style>
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="videocalling.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">How To Set Up A Video Call</a>
-    <a href="what-were-watching.html"" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">What We´re Watching</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="videocalling.html" class="w3-bar-item w3-button w3-padding-large">How To Set Up A Video Call</a>
-    <a href="what-were-watching.html" class="w3-bar-item w3-button w3-padding-large">What We´re Watching</a>
-  </div>
-</div>
+<!-- Navbar script (js/show_navbar.js) creates navbar here -->
+<div class="mynavbar" currentPage="videocalling.html"></div>
 
 <!-- Header -->
 <header class="w3-container w3-red w3-center" style="padding:40px 16px">
@@ -41,9 +29,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-content">
   <h1 class="w3-center">What Are Skype And Zoom?</h1>
   <h5 class="w3-padding-32">Skype and Zoom are both applications for either a desktop PC, laptop, or smartphone that allow you to make
-                            video calls for free over the internet.</h5>
-
-  <p class="w3-text-grey">Is there a difference between Skype and Zoom? Does it matter?</p>
+                            video calls for free over the internet. There is not much difference between the two and we would reccomend you to 
+                            choose Skype for it´s ease of setup and ability to be used without signing up for any account (no password to remember)</h5>
   </div>
 </div>
 
@@ -51,11 +38,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Installing Skype</h1>
-      <h5 class="w3-padding-32">It is important to keep occupied and look after your mental health while cooped up at home. On this site we hope to bring you a wide and varied range of ideas for keeping yourself amused while locked down. Most of our ideas are free and some will be suggestions of helpful items or services that you may find particularly valuable during this time.</h5>
+      <h1>Getting Started With Skype</h1>
+      <h5 class="w3-padding-32">Getting started with Skype is as easy as clicking <a href="https://www.skype.com/en/free-conference-call/" >this link</a>
+                                and then following the instructions below:</h5>
       <ol ="w3-text-grey"type="1">
-        <li>Install Skype from <a href="https://www.skype.com/en/get-skype/" >here</a>.</li>
-        <li></li>
+        <li>
+          When you follow <a href="https://www.skype.com/en/free-conference-call/" >this link</a> you will be taken to a page on the Skype website.
+        </li>
+        <li>
+          Click on the button "Create a free meeting" on the right hand side of the screen.
+        </li>
+        <li>
+          Skype will show you a link wich looks something like "https://join.skype.com/p8xgcYODO6SP". Copy this link and share it with your friends 
+          and family to begin talking on Skype!
+        </li>
       </ol>  
       <p class="w3-text-grey">Please click the links at the top of this page to view more ideas for having fun and keeping sane while cooped up.</p>
     </div>
@@ -67,6 +63,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Third Grid - Zoom -->
+<!--
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-third w3-center">
@@ -83,6 +80,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     </div>
   </div>
 </div>
+-->
 
 <!--
 
@@ -106,6 +104,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
  -->
  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
+
+<script type="text/javascript" src="js/show_navbar.js"></script>
 
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
