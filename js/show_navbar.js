@@ -13,11 +13,13 @@ function includeHTML() {
         <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>\
         <a href="videocalling.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">How To Set Up A Video Call</a>\
         <a href="what-were-watching.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">What We´re Watching</a>\
+        <a href="quiz-writing.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Make Your Own Quiz</a>\
       </div>\
     \
       <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">\
         <a href="videocalling.html" class="w3-bar-item w3-button w3-padding-large">How To Set Up A Video Call</a>\
         <a href="what-were-watching.html" class="w3-bar-item w3-button w3-padding-large">What We´re Watching</a>\
+        <a href="quiz-writing.html" class="w3-bar-item w3-button w3-padding-large">Make Your Own Quiz</a>\
       </div>\
     </div>'
     
@@ -30,7 +32,9 @@ function includeHTML() {
 // current page), and removes the class that does the rollover effect
 const thisPage = includeHTML();
 // var el = document.querySelector("a[href='" + thisPage + "']");
-var el = document.querySelectorAll("a[href='" + thisPage + "']:not(#navDemo)");
+// var el = document.querySelectorAll("a[href='" + thisPage + "']:not(#navDemo)");
+var el = document.querySelectorAll("div.w3-bar ~ a[href='" + thisPage + "']:not(#navDemo)");
+
 el[0].classList.add('w3-white');
 el[0].classList.remove('w3-hover-white');
 // el[1].classList.add('w3-white');
